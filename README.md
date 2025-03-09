@@ -9,6 +9,9 @@ Automatização da criação de repositórios GitHub via linha de comando
 - Criação de README.md padrão
 - Integração com GitHub CLI
 - Abertura automática no VS Code
+- Suporte para templates de workflows
+- Cópia automática de templates CI/CD
+- Seleção de licença (MIT, GPL-3.0, Apache-2.0)
 
 ## Documentação
 A documentação completa está organizada em:

@@ -1,0 +1,17 @@
+name: License Automation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate-license:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Verify LICENSE file exists
+        run: |
+          if [ ! -f LICENSE ]; then
+            echo "LICENSE file missing!"
+            exit 1
+          fi

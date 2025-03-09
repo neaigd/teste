@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.0] - 2025-09-03
+
+### Adicionado
+- Suporte para templates de workflows
+- Cópia automática de templates do diretório workflow-templates
+- Documentação específica para a versão 3
+- Verificação de templates existentes
+
 ## [2.0.0] - 2025-03-09
 
 ### Adicionado

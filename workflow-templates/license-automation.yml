@@ -1,0 +1,29 @@
+name: License Automation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-license:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Verify LICENSE file exists
+        run: |
+          if [ ! -f LICENSE ]; then
+            echo "::error::LICENSE file is missing!"
+            exit 1
+          fi
+          
+      - name: Validate license content
+        run: |
+          if ! grep -q "MIT License" LICENSE && \
+             ! grep -q "GNU GENERAL PUBLIC LICENSE" LICENSE && \
+             ! grep -q "Apache License" LICENSE; then
+            echo "::error::LICENSE file content is invalid"
+            exit 1
+          fi
