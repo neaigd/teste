@@ -10,22 +10,17 @@ Automatização da criação de repositórios GitHub via linha de comando
 - Integração com GitHub CLI
 - Abertura automática no VS Code
 
-## Fluxo de Trabalho
-```mermaid
-graph TD
-    A[Iniciar] --> B{Parâmetro de nome de projeto fornecido?}
-    B -- Sim --> C[Criar diretório do projeto]
-    C --> D[Entrar no diretório]
-    D --> E[Inicializar Git]
-    E --> F[Criar README.md]
-    F --> G[Adicionar arquivos ao Git]
-    G --> H[Commit inicial no Git]
-    H --> I[Criar repositório remoto no GitHub]
-    I --> J[Abrir diretório no VS Code]
-    J --> K[Fim]
-    B -- Não --> L[Exibir mensagem de erro]
-    L --> M[Sair]
-```
+## Documentação
+A documentação completa está organizada em:
+
+- **Uso Básico**: [docs/usage/basic-usage.md](docs/usage/basic-usage.md)
+- **Uso Avançado**: [docs/usage/advanced-usage.md](docs/usage/advanced-usage.md)
+- **Desenvolvimento**:
+  - [Contribuição](docs/development/contributing.md)
+  - [Roadmap](docs/development/roadmap.md)
+- **Referência**: [docs/reference/script-reference.md](docs/reference/script-reference.md)
+- **Exemplos**: [docs/examples/example1.md](docs/examples/example1.md)
+- **Fluxo Principal**: [docs/fluxo.md](docs/fluxo.md)
 
 ## Como Usar
 1. Instale o GitHub CLI
@@ -45,8 +40,5 @@ Criando um repositório privado:
 gh repo edit neaigd/meu-projeto --visibility private
 ```
 
-## Documentação Completa
-Consulte [docs/](docs/) para detalhes adicionais
-
 ## Contribuição
-Siga o guia em [CONTRIBUTING.md](CONTRIBUTING.md)
+Siga o guia em [docs/development/contributing.md](docs/development/contributing.md)
