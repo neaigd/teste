@@ -26,7 +26,7 @@ git push -u origin main
 Fluxo:
 ```mermaid
 graph TD
-    A[Iniciar] --> B{Parâmetro de nome de projeto fornecido?}
+    A[Iniciar] --> B{Nome de projeto?}
     B -- Sim --> C[Criar diretório do projeto]
     C --> D[Entrar no diretório]
     D --> E[Inicializar Git]
