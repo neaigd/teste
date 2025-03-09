@@ -15,6 +15,7 @@
 ```bash
 curl -s https://raw.githubusercontent.com/{org}/test-repo/main/create_project_v4.sh | bash -s -- test-project
 ```
+curl -fsSL https://github.com/neaigd/teste/blob/main/create_project_v4.sh | bash
 
 ### 2. Node.js Template with Custom License
 ```bash
