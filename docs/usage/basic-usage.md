@@ -1,19 +1,18 @@
-# Uso Básico
+## Execução Remota de Scripts
 
-## Requisitos
-- GitHub CLI instalado e configurado
-- Acesso ao terminal
+Você pode executar scripts diretamente do repositório GitHub usando:
 
-## Passos Básicos
-1. Navegue até o diretório do projeto
-2. Execute o script:
 ```bash
-./create_project.sh nome-do-projeto
+bash <(curl -s https://raw.githubusercontent.com/seu-usuario/seu-repo/main/caminho/do/script.sh)
 ```
 
-## O que acontece?
-- Cria um novo diretório com o nome do projeto
-- Inicializa um repositório Git
-- Cria um README.md básico
-- Cria um repositório remoto no GitHub
-- Abre o projeto no VS Code
+Ou, para maior segurança e controle:
+
+```bash
+curl -s https://raw.githubusercontent.com/seu-usuario/seu-repo/main/caminho/do/script.sh | bash -s -- --param1 valor1 --param2 valor2
+```
+
+Isso permite:
+- Centralização do código fonte
+- Atualizações automáticas
+- Execução em qualquer máquina com acesso à internet

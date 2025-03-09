@@ -1,24 +1,18 @@
-# Exemplo 1: Criando um Novo Projeto
+## Exemplo de Execução Remota
 
-## Cenário
-Você precisa criar um novo repositório chamado "meu-projeto" na organização "neaigd"
-
-## Passos
-1. Navegue até o diretório onde deseja criar o projeto
-2. Execute o comando:
+1. Crie um novo diretório para teste:
 ```bash
-./create_project.sh meu-projeto
+mkdir teste-remoto && cd teste-remoto
 ```
 
-## Resultado Esperado
-- Diretório `meu-projeto` criado
-- Repositório Git inicializado
-- README.md básico criado
-- Repositório criado no GitHub: https://github.com/neaigd/meu-projeto
-- Projeto aberto no VS Code
-
-## Verificando
-Confira se o repositório foi criado corretamente:
+2. Execute o script de criação de projeto:
 ```bash
-cd meu-projeto
-git remote -v
+bash <(curl -s https://raw.githubusercontent.com/seu-usuario/seu-repo/main/scripts/create_project.sh)
+```
+
+3. Verifique os arquivos criados:
+```bash
+ls -la
+```
+
+4. Siga as instruções do script para configurar o projeto

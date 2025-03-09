@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0] - 2025-09-03
+
+### Adicionado
+- Suporte para templates de projetos (basic, node, python)
+- Criação automática de estrutura específica por template
+- Configuração inicial para Node.js (package.json, .gitignore)
+- Configuração inicial para Python (setup.py, requirements.txt, virtualenv)
+- Integração completa com GitHub CLI
+- Push automático do código inicial
+- Instruções específicas por template após criação
+
 ## [3.0.0] - 2025-09-03
 
 ### Adicionado

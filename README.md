@@ -45,3 +45,13 @@ gh repo edit neaigd/meu-projeto --visibility private
 
 ## Contribuição
 Siga o guia em [docs/development/contributing.md](docs/development/contributing.md)
+
+## 🚀 Execução Rápida
+
+Para começar imediatamente sem clonar o repositório:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/seu-usuario/seu-repo/main/scripts/create_project.sh)
+```
+
+[Ver documentação completa](#)
